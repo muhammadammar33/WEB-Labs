@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="gradient-background">
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Semester1.html">Semester 1</a></li>
+            <li><a href="./Semester2.html">Semester 2</a></li>
+            <li><a href="./Form.html">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contact me for Work \ General Queries</h1>
+    </header>
+
+    <fieldset class="field_set">
+        <legend>Contact Me</legend>                
+            <form>
+                <label for="clientname" class="form-label">Name</label>
+                <input type="name" id="clientname" required placeholder="Enter your name">
+                <br>
+                <label for="clientemail" class="form-label">Email address</label>
+                <input type="email" id="clientemail" aria-describedby="emailHelp" required placeholder="Enter your Email">
+                <br>
+                <label for="clientphone" class="form-label">Phone</label>
+                <input type="phone" class="form-control" id="clientphone" required placeholder="+92 xxx xxxxxxx">
+                <br>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+                <br>
+                <label for="program">Program of Study:</label>
+                <select id="program" name="program" required>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="biology">Biology</option>
+                    <option value="business">Business</option>
+                </select>
+                <br>
+                <input type="checkbox" id="isclient">
+                <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                <br>
+                <label for="description" class="form-label">Description</label>
+                <br>
+                <textarea name="description" id="description" cols="20" rows="5"></textarea>
+                <br>
+                <label for="image">Upload your Image</label>
+                <input type="file" id="image" class="image" accept="image/*" required>
+                <input type="button" value="Upload Image">
+                <p id="form-p">I'll never share your email & phone with anyone else.</p>
+                <button type="submit" class="button">Submit</button>
+                </form>    
+    </fieldset>
+
+    <footer class="footer">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

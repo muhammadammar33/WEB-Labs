@@ -1,0 +1,19 @@
+[target] {
+    color: rgb(0, 255, 34);
+}
+
+[type="text"] {
+    border: 1px solid #ccc;
+}
+
+[href*="google.com"] {
+    font-weight: bold;
+}
+
+[src^="https://"] {
+    border: 2px solid green;
+}
+
+[lang|="en"] {
+    text-transform: lowercase;
+}

@@ -1,0 +1,9 @@
+nav {
+    background-color: blue;
+}
+
+@media (max-width: 768px) {
+    nav {
+        background-color: blueviolet;
+    }
+}

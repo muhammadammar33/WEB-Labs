@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #575858, rgb(151, 210, 212), #95e69c);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav {
+    background-color: rgb(70, 67, 67);
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 2rem;
+    font-family: cursive;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+#sem {
+    color: deepskyblue;
+}
+
+section {
+    border: 10px double cadetblue;
+}
+
+.field_set {
+    border: 10px double cadetblue;
+}
+
+legend {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    border: 10px double cornflowerblue;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: double underline;
+}
+
+p {
+    text-align: justify;
+    padding: 50px;
+    margin: 0;
+}
+
+#form-p {
+    text-align: justify;
+    padding: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+img:hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid cadetblue;
+    border-radius: 50%;
+}
+
+footer {
+    color: brown;
+}
