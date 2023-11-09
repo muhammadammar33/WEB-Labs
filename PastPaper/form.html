@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        margin: auto;
+    }
+    label{
+        margin-top: 20px;
+    }
+    input{
+        margin-top: 5px;
+    }
+    button{
+        margin-top: 10px;
+        height: 40px;
+        color: white;
+        background-color: black;
+    }
+</style>
+<body>
+    <form id="form" action="">
+        <label for="name">Name:</label>
+        <input id="name" type="text" title="name" placeholder="Enter Name">
+        <label for="email">Email:</label>
+        <input id="email" type="email" title="email" placeholder="Enter Email">
+        <label for="pass">Password:</label>
+        <input id="pass" type="password" title="pass" placeholder="Enter Password">
+        <button type="submit" onclick="saveFormData()">Submit</button>
+    </form>
+
+    <script>
+        function saveFormData() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var pass= document.getElementById("pass").value;
+
+            var Name = localStorage.setItem('Name', name);
+            var Email = localStorage.setItem('Email', email);
+            var Pass = localStorage.setItem('Password', pass);
+
+            alert("Data is saved.")
+        }
+    </script>
+</body>
+</html>
