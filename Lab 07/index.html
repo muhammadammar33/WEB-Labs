@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal History</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="animal-history-banner">
+        <h1>Animal History</h1>
+    </div>
+
+    
+    <div class="image-slider">
+        <div class="carousel">
+            <button class="carousel-button prev" onclick="prevSlide()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZtJREFUSEuVlUFqw0AMRZ8OYUj3LuQMpZBbFLou9Dqh60IP40DvkE33gdxBZZyJPbI0Y8er8dijL319/RGmRwCdXyur8q9x7Y7ZjfSWH3cU8lYT2v0TAQSpBHCN6gRBc/2L9UqFzaAzpWVQe6SgKIi1Gd3Tcu+mzJ9sFgHvO+AdON574/oXtdHRH0QW2CkMwDPwCXxvFV9FRZOAUpyU+QmhR/kDXhAuSZ9zY0t6N8l0OrADOQnaK5yBg8AlmpaS6nKebhXEQu+AX5AeNAV/Ba4Py7cyjR3ogLBH5Qw6BvcCnGupAXuZCh0qA+h+zTcWhU+xrDJ9lA5KgKZRTDYjqNR6Eyku8Z9kuQdLkaNixa8MRYvDXdZ+oio3Wa6xNLNOSrBibVVkM8pKop9BuHqXXfOitufcBo0J5HAbtNLlGwBuQLJuSypGqxAGdLSKD+DHXhaxv6QkzKCt6OUJeBP4Mmqpdb0ocMW36tnVbkNTfTOBcswDOdqB0nw/P2Z2sVU54LqzerMLmlyzDFeBFdZoqsWgtexqYWpb2pJr/we5ar8eAyTRqgAAAABJRU5ErkJggg==" alt="prev"/></button>
+            <div class="carousel-slides">
+                <div class="carousel-slide">
+                    <img src="./images/Cheetah.jpeg" height="500px" width="500px" alt="Animal 1">
+                    <p>Cheetah</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/Elephant.jpeg" height="500px" width="500px" alt="Animal 2">
+                    <p>Elephant</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="./images/Zebra.jpeg" height="500px" width="500px" alt="Animal 3">
+                    <p>Zebra</p>
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="nextSlide()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZZJREFUSEuNlk1qw0AMhT/dIZB9Nr1DC+l1SreF3qRkX+hBCiFnCLQHKA30Ciq2x2PJI03iRfwzGknvSXoToXcJoLnBsuwNx7fyM9wgcNR8qhs0jLk4tQnJ6LpeNiNBTRYdp7ED5zNAcDM3V/kzFA1w5kztc+Yjt7HpiXsxxelU9xV4B34a3oPCuRo0ubZMPQNvwBewH4JMe3JKTYDMyGHcCnpS2AHfwD1w8YmtqV6nbXHHMbfAiSnIuSC5NFQXvwlFmXnNZgjyCdzZIPPqeneh0H9eOsoy7OBvQI8uiHApwxPNQQmw3LRViW77DnQ9AH9rlg1bzmWgQl3qaj2sNrgusrR0RXBa3ACVIoG9Nh0F7aAFnoNm2oAcQX2RLcvm2c+JL0UEpNtB7UyEc5DO5jQDwg6Vs6CVlkAlRrVxFPnihBL9JHDQacAegd/bpCI4LTqC/YLwgQZiF5wNfbG7Qf1mBHEHzidaQZC16YIm74C0BhnvAWsrWU56ciis+a8wURR7q5bd+bXok1qGjq6cIxb4cvgFAf4BOdu5IDglt1gAAAAASUVORK5CYII=" alt="next"/></button>
+        </div>
+        <button id="playButton">Play</button>
+    </div>
+
+
+    <div class="animal-description">
+        <h2>Cheetah</h2>
+        <p>The cheetah's unique body structure: flexible spine, semi-retractable claws, long legs and tail allow it to achieve the unbelievable top speed of 110 km/hr (70 mph). The cheetah's body is narrow and lightweight with long slender limbs. Specialized muscles allow for a greater swing to the limbs increasing acceleration.</p>
+        <img src="./images/Cheetah.jpeg" alt="Cheetah">
+        <br>
+        <hr>
+        <br>
+        <h2>Elephant</h2>
+        <p>Elephants are the largest land mammals on earth and have distinctly massive bodies, large ears, and long trunks. They use their trunks to pick up objects, trumpet warnings, greet other elephants, or suck up water for drinking or bathing, among other uses.</p>
+        <img src="./images/Elephant.jpeg" alt="Cheetah">
+        <br>
+        <hr>
+        <br>
+        <h2>Zebra</h2>
+        <p>Zebras are easily recognised by their bold black-and-white striping patterns. The coat appears to be white with black stripes, as indicated by the belly and legs when unstriped, but the skin is black. Young or foals are born with brown and white coats, and the brown darkens with age.</p>
+        <img src="./images/Zebra.jpeg" alt="Cheetah">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
